@@ -1,0 +1,13 @@
+.container{
+    width: 100%;
+}
+.head{
+    background-color: rgb(179, 179, 79);
+    width: 100%;
+}
+.head h1{
+    text-align: center;
+}
+.inside{
+    width: 100%;
+}

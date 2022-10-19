@@ -1,0 +1,23 @@
+<app-add-item (itemAdd)="addItem($event)" class="inside"></app-add-item>
+<div class="title"><h1>Lists</h1></div>
+<div *ngIf="items.length===0; else elseBlock"><h1 style="text-align: center;">Grocery List is empty...</h1></div>
+<ng-template #elseBlock>
+
+<table class="table-list">
+    <tr class="table-head">
+        <th>Product Name</th>
+        <th>Quantity</th>
+        <th>Image URL</th>
+        <th></th>
+    </tr>
+
+    <tr *ngFor = "let item of items">
+        <td>{{item.itemName}}</td>
+        <td>{{item.itemQuantity}}</td>
+        <td>{{item.itemUrl}}</td>
+        <td><button (click)="view(item)">View</button>
+            <button (click)="deleteItem(item)">DELETE</button>
+        </td>
+    </tr>
+</table>
+</ng-template>

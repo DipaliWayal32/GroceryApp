@@ -1,0 +1,21 @@
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+ }
+ .table-list{
+     height: 50vh;
+     text-align: center;
+     font-size: 25px;
+ }
+ td{
+     background-color: rgb(100, 126, 126);
+ }
+ th{
+     background-color: rgb(149, 167, 122);
+ }
+ 
+ img{
+     height: 200px;
+ }
